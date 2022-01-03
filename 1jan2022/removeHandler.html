@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>Add Event Listener</h1>
+	<button id="mybtn">click me</button>
+	<script type="text/javascript">
+		function disp1()
+		{
+			alert ("button clicked");
+		}
+		var btn=document.getElementById("mybtn");
+		//btn.addeventLitener
+		btn.addEventListener("click",disp1,true);
+		btn.removeEventLisetner("click",disp1,true);
+	</script>
+
+</body>
+</html>

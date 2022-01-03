@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>Overwrite</h1>
+	<button id="mybtn">Click Me</button>
+	<script type="text/javascript">
+		function disp1()
+		{
+			alert("button clicked 1");
+		}
+		function disp2()
+		{
+			alert("button clicked 2");
+		}
+		document.getElemntById("mybtn").onclick=disp1;
+		document.getElemntById("mybtn").onclick=disp2;
+	</script>
+
+</body>
+</html>
