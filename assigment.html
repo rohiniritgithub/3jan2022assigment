@@ -60,7 +60,18 @@ Per Ticket price=100.00 Rupees.
 		{
 			var n=document.getElementById('ticket').value;
 		    var res=a*n;
-		document.totalform.res1.value=res;
+			
+		if(n>=10)
+		{
+			var discount=10;
+			var dis=res-res/10;
+			document.totalform.res1.value = dis;
+		}
+		else
+		{
+			document.totalform.res1.value = res;
+		}
+		
 	    }
 
 
